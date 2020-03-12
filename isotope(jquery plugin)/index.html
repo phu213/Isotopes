@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> My Isotope </title>
+		
+		<link rel="stylesheet" href="style.css">
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js">
+		</script>
+		
+		<script type="text/javascript" src="isotope.js"></script>
+		
+		<script type="text/javascript">
+		
+		$(document).ready(function(){
+		var $container = $('#content');
+		$container.isotope({
+		filter: '*',
+		animationOptions: {
+     	duration: 750,
+     	easing: 'linear',
+     	queue: false,
+   		}
+	});
+
+	  
+
+$('#nav a').click(function(){
+  var selector = $(this).attr('data-filter');
+    $container.isotope({ 
+	filter: selector,
+	animationOptions: {
+     duration: 750,
+     easing: 'linear',
+     queue: false,
+	 
+   }
+  });
+  return false;
+});
+
+});
+		</script>
+	</head>
+	
+	<body>
+		<div id="header">
+			<h1>My Skills</h1>
+		</div>
+		<div id="nav">
+			
+			<ul>
+				<li><a href="" data-filter="*">All</a></li>
+				<li><a href="" data-filter=".cat1">Wordpress</a></li>
+				<li><a href="" data-filter=".cat2">Photoshop</a></li>
+				<li><a href="" data-filter=".cat3">Bootstrap</a></li>
+				<li><a href="" data-filter=".cat4">Javascript</a></li>
+				<li><a href="" data-filter=".cat5">Responsive</a></li>
+			</ul>
+		</div>
+		
+		<div id="content">
+			
+			
+			
+			<div class="box cat1">
+				<h2 class="box-title">Wordpress</h2>
+				<div class="box-text">
+					This is my final project for my web content mangement class where I have to used a theme an understand how a theme works.
+					<a href="http://patrickhdesigns.website/">My Custom Site</a>
+				</div>
+			</div>
+
+			<div class="box cat1">
+				<h2 class="box-title">Wordpress</h2>
+				<div class="box-text">
+					This is my capstone project that I have to build for my client.
+					<a href="http://jr-achieve-a.web.dmitcapstone.ca/jr-achieve/">Junior Achievement </a>
+				</div>
+			</div>
+
+			<div class="box cat5">
+				<h2 class="box-title">Making a progessive nav</h2>
+				<div class="box-text">
+					When you are changing the screen the size the nav will show more or less nav links.
+					<a href="https://progressive-nav.netlify.com/">My Custom Site</a>
+				</div>
+			</div>
+			
+			<div class="box cat2">
+				<h2 class="box-title">Animals Hybird</h2>
+				<div class="box-text">
+		
+					<img src="img/animals-hybird-resize.jpg" alt="animals-hybird-resize">
+				</div>
+			</div>
+			
+			<div class="box cat1">
+				<h2 class="box-title">Wordpress</h2>
+				<div class="box-text">
+					Understanding how to create post as well Randmozie them.
+				</div>
+			</div>
+			
+			<div class="box cat3">
+				<h2 class="box-title">Bootstrap</h2>
+				<div class="box-text">
+					Creat a dashboard using Bootstrap.
+					<a href="https://bootstrap-dashboards.netlify.com/">My Custom Site</a>
+				</div>
+			</div>
+
+			<div class="box cat4">
+				<h2 class="box-title">Photo Filter </h2>
+				<div class="box-text">
+					Create a photgallery that can filter by its tags using javascript.
+					<a href="https://assignment2photo-filter.netlify.com/"> Check it out</a>
+				</div>
+			</div>
+
+			
+			<div class="box cat4">
+				<h2 class="box-title">Friend finder</h2>
+				<div class="box-text">
+					
+					<a href="https://assinment-4-friendfinder.netlify.com/"> Check it out</a>
+				</div>
+			</div>
+		
+		
+		
+		</div>
+
+		
+	</body>
+</html>
